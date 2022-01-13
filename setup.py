@@ -7,13 +7,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name='references_parser',
     packages=setuptools.find_packages(),
-    version='0.0.1',
+    version='0.0.2',
     description="Tool for parsing bibtex in ssau's format",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Mukhin Artem',
     author_email='artemmukhinssau@gmail.com',
-    url='https://github.com/Banayaki/references_parser',
+    url='https://github.com/Banayaki/ReferencesParser',
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3',

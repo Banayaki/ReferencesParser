@@ -1,7 +1,7 @@
 # Install
 
 ```bash
-pip install references_parser
+pip install references-parser
 ```
 
 # Contribution
