@@ -93,6 +93,7 @@ class Parser:
         for bibtex_entry in bibtex_dict.entries:
             # The following line will parse string with authors in list of authors
             bibtex_entry = p.customization.author(bibtex_entry)
+            bibtex_entry = p.customization.convert_to_unicode(bibtex_entry)
             if bibtex_entry['ENTRYTYPE'] == "article":
                 result.append(self.parse_article(bibtex_entry))
             elif bibtex_entry['ENTRYTYPE'] == "inproceedings":
