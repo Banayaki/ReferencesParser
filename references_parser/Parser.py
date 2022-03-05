@@ -57,7 +57,7 @@ class Parser:
 
         return result + "."
 
-    def _parse_authors(self, author_string):
+    def _parse_authors(self, author_string, return_all=False):
         def parse_single_author(str_author):
             result = ""
             splitted_author = p.customization.splitname(str_author)
@@ -75,7 +75,7 @@ class Parser:
             first_author += initial[0]
         first_author += "."
 
-        if len(author_string) < 5:
+        if len(author_string) < 5 or return_all:
             for str_author in author_string:
                 authors += parse_single_author(str_author)
             authors = authors[:-2]
