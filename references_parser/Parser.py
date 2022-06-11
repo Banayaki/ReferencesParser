@@ -31,8 +31,10 @@ class Parser:
         if len(volume) != 0:
             result += SEP_DASH + volume
 
-        pages = bibtex_entry['pages'].split("--")
-        if len(pages) == 1:
+        pages = [] if 'pages' not in bibtex_entry else bibtex_entry['pages'].split("--")
+        if len(pages) == 0:
+            pass
+        elif len(pages) == 1:
             result += SEP_DASH + f"P. {pages[0]}"
         elif len(pages) == 2:
             result += SEP_DASH + f"P. {pages[0]}-{pages[1]}"
