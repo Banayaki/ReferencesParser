@@ -1,10 +1,11 @@
 import argparse
-from .Parser import Parser
-from .IeeeParser import IEEEParser
+from parsers import SsauParser
+from parsers import IEEEParser
 
 PARSER_MAPPING = {
-    'itnt': Parser(),
-    'ieee': IEEEParser()
+    'ssau': SsauParser(),
+    'ieee': IEEEParser(),
+
 }
 
 if __name__ == '__main__':
@@ -14,7 +15,7 @@ if __name__ == '__main__':
     argparser.add_argument('-s', '--save', type=str,
                            help='Path to file where to save the result of parsing.', default='')
     argparser.add_argument('-p', '--parser', type=str,
-                           help='Parser to use. Available parsers: ieee, itnt. Default: itnt.', default='itnt')
+                           help='Parser to use. Available parsers: ieee, ssau. Default: ssau.', default='ssau')
 
     args = argparser.parse_args()
     with open(args.path, 'r') as f:

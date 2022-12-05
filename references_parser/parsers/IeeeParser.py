@@ -1,9 +1,9 @@
-from .Parser import Parser
+from .SsauParser import SsauParser
 
 SEP = ', '
 
 
-class IEEEParser(Parser):
+class IEEEParser(SsauParser):
     """
     Parses Bibtext into IEEE citation format.
     Official citation guideline:

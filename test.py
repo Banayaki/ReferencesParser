@@ -1,4 +1,4 @@
-from references_parser import Parser
+from references_parser.parsers import SsauParser
 
 
 test_bibtex = """
@@ -96,7 +96,7 @@ test_bibtex = """
 
 
 if __name__ == '__main__':
-    parser = Parser()
+    parser = SsauParser()
     result = parser(test_bibtex)
     for entry in result:
         print(entry, end="\n\n")

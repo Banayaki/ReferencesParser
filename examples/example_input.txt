@@ -1,0 +1,248 @@
+@article{adao2017hyperspectral,
+  title={Hyperspectral imaging: A review on UAV-based sensors, data processing and applications for agriculture and forestry},
+  author={Ad{\~a}o, Telmo and Hru{\v{s}}ka, Jon{\'a}{\v{s}} and P{\'a}dua, Lu{\'\i}s and Bessa, Jos{\'e} and Peres, Emanuel and Morais, Raul and Sousa, Joaquim Joao},
+  journal={Remote sensing},
+  volume={9},
+  number={11},
+  pages={1110},
+  year={2017},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+@article{thomas2018benefits,
+  title={Benefits of hyperspectral imaging for plant disease detection and plant protection: a technical perspective},
+  author={Thomas, Stefan and Kuska, Matheus Thomas and Bohnenkamp, David and Brugger, Anna and Alisaac, Elias and Wahabzada, Mirwaes and Behmann, Jan and Mahlein, Anne-Katrin},
+  journal={Journal of Plant Diseases and Protection},
+  volume={125},
+  number={1},
+  pages={5--20},
+  year={2018},
+  publisher={Springer}
+}
+@article{nagasubramanian2019plant,
+  title={Plant disease identification using explainable 3D deep learning on hyperspectral images},
+  author={Nagasubramanian, Koushik and Jones, Sarah and Singh, Asheesh K and Sarkar, Soumik and Singh, Arti and Ganapathysubramanian, Baskar},
+  journal={Plant methods},
+  volume={15},
+  number={1},
+  pages={1--10},
+  year={2019},
+  publisher={Springer}
+}
+@article{asrar1984estimating,
+  title={Estimating absorbed photosynthetic radiation and leaf area index from spectral reflectance in wheat 1},
+  author={Asrar, GQ and Fuchs, M and Kanemasu, ET and Hatfield, JL},
+  journal={Agronomy journal},
+  volume={76},
+  number={2},
+  pages={300--306},
+  year={1984},
+  publisher={Wiley Online Library}
+}
+@article{kulcke2018compact,
+  title={A compact hyperspectral camera for measurement of perfusion parameters in medicine},
+  author={Kulcke, Axel and Holmer, Amadeus and Wahl, Philip and Siemers, Frank and Wild, Thomas and Daeschlein, Georg},
+  journal={Biomedical Engineering/Biomedizinische Technik},
+  volume={63},
+  number={5},
+  pages={519--527},
+  year={2018},
+  publisher={De Gruyter}
+}
+@article{fabelo2018spatio,
+  title={Spatio-spectral classification of hyperspectral images for brain cancer detection during surgical operations},
+  author={Fabelo, Himar and Ortega, Samuel and Ravi, Daniele and Kiran, B Ravi and Sosa, Coralia and Bulters, Diederik and Callic{\'o}, Gustavo M and Bulstrode, Harry and Szolna, Adam and Pi{\~n}eiro, Juan F and others},
+  journal={PloS one},
+  volume={13},
+  number={3},
+  pages={e0193721},
+  year={2018},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+@article{halicek2017deep,
+  title={Deep convolutional neural networks for classifying head and neck cancer using hyperspectral imaging},
+  author={Halicek, Martin and Lu, Guolan and Little, James V and Wang, Xu and Patel, Mihir and Griffith, Christopher C and El-Deiry, Mark W and Chen, Amy Y and Fei, Baowei},
+  journal={Journal of biomedical optics},
+  volume={22},
+  number={6},
+  pages={060503},
+  year={2017},
+  publisher={SPIE}
+}
+@inproceedings{garcia2016parallel,
+  title={Parallel multilayer perceptron neural network used for hyperspectral image classification},
+  author={Garcia-Salgado, Beatriz P and Ponomaryov, Volodymyr I and Robles-Gonzalez, Marco A},
+  booktitle={Real-Time Image and Video Processing 2016},
+  volume={9897},
+  pages={141--153},
+  year={2016},
+  organization={SPIE}
+}
+@article{he2021modifications,
+  title={Modifications of the Multi-Layer Perceptron for Hyperspectral Image Classification},
+  author={He, Xin and Chen, Yushi},
+  journal={Remote Sensing},
+  volume={13},
+  number={17},
+  pages={3547},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+@article{lee2019classification,
+  title={Classification of halophytes from airborne hyperspectral imagery in Ganghwa Island, Korea using multilayer perceptron artificial neural network},
+  author={Lee, Yong-Suk and Park, Sung-Hwan and Cho, Young-Ho and Lee, Won-Jin and Jung, Hyung-Sup and Lee, Moung-Jin and Kim, Sung-Hak},
+  journal={Journal of Coastal Research},
+  volume={90},
+  number={SI},
+  pages={243--250},
+  year={2019},
+  publisher={Coastal Education and Research Foundation}
+}
+@inproceedings{chollet2017xception,
+  title={Xception: Deep learning with depthwise separable convolutions},
+  author={Chollet, Fran{\c{c}}ois},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1251--1258},
+  year={2017}
+}
+@inproceedings{szegedy2017inception,
+  title={Inception-v4, inception-resnet and the impact of residual connections on learning},
+  author={Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alexander A},
+  booktitle={Thirty-first AAAI conference on artificial intelligence},
+  year={2017}
+}
+@article{li2018pyramid,
+  title={Pyramid attention network for semantic segmentation},
+  author={Li, Hanchao and Xiong, Pengfei and An, Jie and Wang, Lingxue},
+  journal={arXiv preprint arXiv:1805.10180},
+  year={2018}
+}
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={Ieee}
+}
+@inproceedings{long2015fully,
+  title={Fully convolutional networks for semantic segmentation},
+  author={Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3431--3440},
+  year={2015}
+}
+@inproceedings{yang2016object,
+  title={Object contour detection with a fully convolutional encoder-decoder network},
+  author={Yang, Jimei and Price, Brian and Cohen, Scott and Lee, Honglak and Yang, Ming-Hsuan},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={193--202},
+  year={2016}
+}
+@inproceedings{ronneberger2015u,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={International Conference on Medical image computing and computer-assisted intervention},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+@article{bindhu2019biomedical,
+  title={Biomedical image analysis using semantic segmentation},
+  author={Bindhu, V},
+  journal={Journal of Innovative Image Processing (JIIP)},
+  volume={1},
+  number={02},
+  pages={91--101},
+  year={2019}
+}
+@article{li2017spectral,
+  title={Spectral--spatial classification of hyperspectral imagery with 3D convolutional neural network},
+  author={Li, Ying and Zhang, Haokui and Shen, Qiang},
+  journal={Remote Sensing},
+  volume={9},
+  number={1},
+  pages={67},
+  year={2017},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+@inproceedings{he2017multi,
+  title={Multi-scale 3D deep convolutional neural network for hyperspectral image classification},
+  author={He, Mingyi and Li, Bo and Chen, Huahui},
+  booktitle={2017 IEEE International Conference on Image Processing (ICIP)},
+  pages={3904--3908},
+  year={2017},
+  organization={IEEE}
+}
+@article{khan2015joint,
+  title={Joint group sparse PCA for compressed hyperspectral imaging},
+  author={Khan, Zohaib and Shafait, Faisal and Mian, Ajmal},
+  journal={IEEE Transactions on Image Processing},
+  volume={24},
+  number={12},
+  pages={4934--4942},
+  year={2015},
+  publisher={IEEE}
+}
+@article{trajanovski2020tongue,
+  title={Tongue tumor detection in hyperspectral images using deep learning semantic segmentation},
+  author={Trajanovski, Stojan and Shan, Caifeng and Weijtmans, Pim JC and de Koning, Susan G Brouwer and Ruers, Theo JM},
+  journal={IEEE transactions on biomedical engineering},
+  volume={68},
+  number={4},
+  pages={1330--1340},
+  year={2020},
+  publisher={IEEE}
+}
+@inproceedings{tian2017l2,
+  title={L2-net: Deep learning of discriminative patch descriptor in euclidean space},
+  author={Tian, Yurun and Fan, Bin and Wu, Fuchao},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={661--669},
+  year={2017}
+}
+@article{paringer2021formation,
+  title={Formation of an informative index for recognizing specified objects in hyperspectral data},
+  author={Paringer, RA and Mukhin, AV and Kupriyanov, AV},
+  journal={Computer Optics},
+  volume={45},
+  number={6},
+  pages={873--878},
+  year={2021}
+}
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+@article{loshchilov2016sgdr,
+  title={Sgdr: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1608.03983},
+  year={2016}
+}
+@inproceedings{abadi2016tensorflow,
+  title={$\{$TensorFlow$\}$: A System for $\{$Large-Scale$\}$ Machine Learning},
+  author={Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+  booktitle={12th USENIX symposium on operating systems design and implementation (OSDI 16)},
+  pages={265--283},
+  year={2016}
+}
+@inproceedings{lam2015numba,
+  title={Numba: A llvm-based python jit compiler},
+  author={Lam, Siu Kwan and Pitrou, Antoine and Seibert, Stanley},
+  booktitle={Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC},
+  pages={1--6},
+  year={2015}
+}
+@article{paszke2019pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  pages={1--6},
+  year={2019}
+}
+

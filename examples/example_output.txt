@@ -1,0 +1,58 @@
+Adão, T. Hyperspectral imaging: A review on UAV-based sensors, data processing and applications for agriculture and forestry [Текст] / T. Adão [и др.] // Remote sensing. ‒ 2017. ‒ Vol. 9(11). ‒ P. 1110.
+
+Thomas, S. Benefits of hyperspectral imaging for plant disease detection and plant protection: a technical perspective [Текст] / S. Thomas [и др.] // Journal of Plant Diseases and Protection. ‒ 2018. ‒ Vol. 125(1). ‒ P. 5-20.
+
+Nagasubramanian, K. Plant disease identification using explainable 3D deep learning on hyperspectral images [Текст] / K. Nagasubramanian [и др.] // Plant methods. ‒ 2019. ‒ Vol. 15(1). ‒ P. 1-10.
+
+Asrar, G. Estimating absorbed photosynthetic radiation and leaf area index from spectral reflectance in wheat 1 [Текст] / G. Asrar, M. Fuchs, E. Kanemasu, J. Hatfield // Agronomy journal. ‒ 1984. ‒ Vol. 76(2). ‒ P. 300-306.
+
+Kulcke, A. A compact hyperspectral camera for measurement of perfusion parameters in medicine [Текст] / A. Kulcke [и др.] // Biomedical Engineering/Biomedizinische Technik. ‒ 2018. ‒ Vol. 63(5). ‒ P. 519-527.
+
+Fabelo, H. Spatio-spectral classification of hyperspectral images for brain cancer detection during surgical operations [Текст] / H. Fabelo [и др.] // PloS one. ‒ 2018. ‒ Vol. 13(3). ‒ P. e0193721.
+
+Halicek, M. Deep convolutional neural networks for classifying head and neck cancer using hyperspectral imaging [Текст] / M. Halicek [и др.] // Journal of biomedical optics. ‒ 2017. ‒ Vol. 22(6). ‒ P. 060503.
+
+Garcia-Salgado, BP. Parallel multilayer perceptron neural network used for hyperspectral image classification [Текст] / B.P. Garcia-Salgado, V.I. Ponomaryov, M.A. Robles-Gonzalez // Real-Time Image and Video Processing 2016. ‒ SPIE, 2016. ‒ P. 141-153.
+
+He, X. Modifications of the Multi-Layer Perceptron for Hyperspectral Image Classification [Текст] / X. He, Y. Chen // Remote Sensing. ‒ 2021. ‒ Vol. 13(17). ‒ P. 3547.
+
+Lee, Y. Classification of halophytes from airborne hyperspectral imagery in Ganghwa Island, Korea using multilayer perceptron artificial neural network [Текст] / Y. Lee [и др.] // Journal of Coastal Research. ‒ 2019. ‒ Vol. 90(SI). ‒ P. 243-250.
+
+Chollet, F. Xception: Deep learning with depthwise separable convolutions [Текст] / F. Chollet // Proceedings of the IEEE conference on computer vision and pattern recognition. ‒ 2017. ‒ P. 1251-1258.
+
+Szegedy, C. Inception-v4, inception-resnet and the impact of residual connections on learning [Текст] / C. Szegedy, S. Ioffe, V. Vanhoucke, A.A. Alemi // Thirty-first AAAI conference on artificial intelligence. ‒ 2017.
+
+Li, H. Pyramid attention network for semantic segmentation [Текст] / H. Li, P. Xiong, J. An, L. Wang // ArXiv. ‒ 2018.
+
+LeCun, Y. Gradient-based learning applied to document recognition [Текст] / Y. LeCun, L. Bottou, Y. Bengio, P. Haffner // Proceedings of the IEEE. ‒ 1998. ‒ Vol. 86(11). ‒ P. 2278-2324.
+
+Long, J. Fully convolutional networks for semantic segmentation [Текст] / J. Long, E. Shelhamer, T. Darrell // Proceedings of the IEEE conference on computer vision and pattern recognition. ‒ 2015. ‒ P. 3431-3440.
+
+Yang, J. Object contour detection with a fully convolutional encoder-decoder network [Текст] / J. Yang [и др.] // Proceedings of the IEEE conference on computer vision and pattern recognition. ‒ 2016. ‒ P. 193-202.
+
+Ronneberger, O. U-net: Convolutional networks for biomedical image segmentation [Текст] / O. Ronneberger, P. Fischer, T. Brox // International Conference on Medical image computing and computer-assisted intervention. ‒ Springer, 2015. ‒ P. 234-241.
+
+Bindhu, V. Biomedical image analysis using semantic segmentation [Текст] / V. Bindhu // Journal of Innovative Image Processing (JIIP). ‒ 2019. ‒ Vol. 1(02). ‒ P. 91-101.
+
+Li, Y. Spectral--spatial classification of hyperspectral imagery with 3D convolutional neural network [Текст] / Y. Li, H. Zhang, Q. Shen // Remote Sensing. ‒ 2017. ‒ Vol. 9(1). ‒ P. 67.
+
+He, M. Multi-scale 3D deep convolutional neural network for hyperspectral image classification [Текст] / M. He, B. Li, H. Chen // 2017 IEEE International Conference on Image Processing (ICIP). ‒ IEEE, 2017. ‒ P. 3904-3908.
+
+Khan, Z. Joint group sparse PCA for compressed hyperspectral imaging [Текст] / Z. Khan, F. Shafait, A. Mian // IEEE Transactions on Image Processing. ‒ 2015. ‒ Vol. 24(12). ‒ P. 4934-4942.
+
+Trajanovski, S. Tongue tumor detection in hyperspectral images using deep learning semantic segmentation [Текст] / S. Trajanovski [и др.] // IEEE transactions on biomedical engineering. ‒ 2020. ‒ Vol. 68(4). ‒ P. 1330-1340.
+
+Tian, Y. L2-net: Deep learning of discriminative patch descriptor in euclidean space [Текст] / Y. Tian, B. Fan, F. Wu // Proceedings of the IEEE conference on computer vision and pattern recognition. ‒ 2017. ‒ P. 661-669.
+
+Paringer, R. Formation of an informative index for recognizing specified objects in hyperspectral data [Текст] / R. Paringer, A. Mukhin, A. Kupriyanov // Computer Optics. ‒ 2021. ‒ Vol. 45(6). ‒ P. 873-878.
+
+Kingma, DP. Adam: A method for stochastic optimization [Текст] / D.P. Kingma, J. Ba // ArXiv. ‒ 2014.
+
+Loshchilov, I. Sgdr: Stochastic gradient descent with warm restarts [Текст] / I. Loshchilov, F. Hutter // ArXiv. ‒ 2016.
+
+Abadi, M. $\$TensorFlow$\$: A System for $\$Large-Scale$\$ Machine Learning [Текст] / M. Abadi [и др.] // 12th USENIX symposium on operating systems design and implementation (OSDI 16). ‒ 2016. ‒ P. 265-283.
+
+Lam, SK. Numba: A llvm-based python jit compiler [Текст] / S.K. Lam, A. Pitrou, S. Seibert // Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC. ‒ 2015. ‒ P. 1-6.
+
+Paszke, A. Pytorch: An imperative style, high-performance deep learning library [Текст] / A. Paszke [и др.] // Advances in neural information processing systems. ‒ 2019. ‒ Vol. 32. ‒ P. 1-6.
+

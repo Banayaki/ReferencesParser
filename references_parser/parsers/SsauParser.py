@@ -4,7 +4,7 @@ import bibtexparser as p
 SEP_DASH = u". \u2012 "
 
 
-class Parser:
+class SsauParser:
 
     def parse_article(self, bibtex_entry: dict):
         """
