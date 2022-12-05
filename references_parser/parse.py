@@ -1,6 +1,6 @@
 import argparse
-from parsers import SsauParser
-from parsers import IEEEParser
+from .parsers import SsauParser
+from .parsers import IEEEParser
 
 PARSER_MAPPING = {
     'ssau': SsauParser(),
