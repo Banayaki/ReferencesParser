@@ -18,7 +18,7 @@ if __name__ == '__main__':
                            help='Parser to use. Available parsers: ieee, ssau. Default: ssau.', default='ssau')
 
     args = argparser.parse_args()
-    with open(args.path, 'r') as f:
+    with open(args.path, 'r', encoding='utf-8') as f:
         citations = f.read()
 
     parser_type = args.parser.lower()
