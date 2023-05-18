@@ -20,7 +20,9 @@ def cli():
 @click.argument('path', type=str)
 @click.option('-s', '--save', type=str, help='Path to file where to save the result of parsing.', default='')
 @click.option('-p', '--parser', type=str, help='Parser to use. Available parsers: ieee, ssau. Default: ssau.', default='ssau')
-def parse(path: str, save: str, parser: str, *args, **kwargs):
+@click.option('-v', '--verbose', is_flag=True, help='Whether to print output to stdout or not', default=False)
+@click.option('-b', '--beautify', type=int, help='Number of line wraps between references. Default: 1', default=1)
+def parse(path: str, save: str, parser: str, verbose: bool, beautify: int):
     with open(path, 'r', encoding='utf-8') as f:
         citations = f.read()
 
@@ -31,13 +33,17 @@ def parse(path: str, save: str, parser: str, *args, **kwargs):
                          f"{parser_type}")
 
     result = parser(citations)
-    for entry in result:
-        print(entry, end="\n\n")
+    
+    end = "".join(["\n" for _ in range(beautify)])
+    
+    if verbose:
+        for entry in result:
+            print(entry, end=end)
 
     if save:
         with open(save, 'w', encoding='utf-8') as f:
             for entry in result:
-                f.write(entry + '\n\n')
+                f.write(entry + end)
         print(f'Saved result to {save}.')
 
 

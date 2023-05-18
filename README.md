@@ -7,14 +7,16 @@ pip install references-parser
 
 ### Use help to see CLI parameters
 ```bash
-➜ python -m references_parser parse --help
+➜ python -m references_parser parse --help        
 Usage: python -m references_parser parse [OPTIONS] PATH
 
 Options:
-  -s, --save TEXT    Path to file where to save the result of parsing.
-  -p, --parser TEXT  Parser to use. Available parsers: ieee, ssau. Default:
-                     ssau.
-  --help             Show this message and exit.
+  -s, --save TEXT         Path to file where to save the result of parsing.
+  -p, --parser TEXT       Parser to use. Available parsers: ieee, ssau.
+                          Default: ssau.
+  -v, --verbose           Whether to print output to stdout or not
+  -b, --beautify INTEGER  Number of line wraps between references. Default: 1
+  --help                  Show this message and exit.
 ```
 
 ### Usual way of using the script
