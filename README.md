@@ -5,14 +5,52 @@ pip install references-parser
 ```
 # Usage
 
-There are 2 ways of using parser:
-1. Write a Python script (or Jupyter Notebook) and do parsing manually using the library.
-2. Do parsing from terminal. The steps are as follows:
-   1. Put bibtex citations in a text file `filename.txt`.
-   2. Open terminal in the corresponding folder.
-   3. Enter the command `python -m references_parser.parse filename.txt -s parse_result.txt`. 
-   You may change the parser type via `-p` parameter. Available parsers: ssau, ieee.
-   4. Parsing results will be saved in `parse_result.txt`.
+### Use help to see CLI parameters
+```bash
+➜ python -m references_parser parse --help
+Usage: python -m references_parser parse [OPTIONS] PATH
+
+Options:
+  -s, --save TEXT    Path to file where to save the result of parsing.
+  -p, --parser TEXT  Parser to use. Available parsers: ieee, ssau. Default:
+                     ssau.
+  --help             Show this message and exit.
+```
+
+### Usual way of using the script
+```bash
+python -m references_parser parse in.txt
+```
+
+# Website references
+
+It's hard to fully parse a website automatically, so some manual interactions are required.
+
+How to add a website reference:
+
+1. Add the links directly to the input file.
+2. Invoke the `prepare-urls` command like this:
+
+```bash
+python -m references_parser prepare-urls in.txt
+```
+
+3. Then, the URL in the file will be replaced with a BibTeX-annotated URL:
+
+```
+@online{Google,
+    title={Google},
+    date={18.05.2023},
+    year={2023},
+    origin={TODO: Author or place or corp here},
+    base={TODO: Base resource title here},
+    url={<https://google.com>}
+}
+```
+
+4. Here, you can fill in the fields `origin` **(mandatory)** and `base` with the required information.
+5. Then, you can use parsers as usual, but pay attention that the result contains `[Б.м.]`, which you may want to delete.
+
 
 # Examples
 

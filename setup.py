@@ -3,11 +3,14 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+    
+with open("requirements.txt", "r") as fh:
+    requirements = fh.read()
 
 setup(
     name='references_parser',
     packages=setuptools.find_packages(),
-    version='0.2.4',
+    version='1.0.0',
     description="Tool for parsing bibtex in ssau's format",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -18,7 +21,10 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    ], install_requires=[
-        'bibtexparser~=1.2.0'
-    ]
+    ], install_requires=requirements.split(),
+    entry_points={
+        'console_scripts': [
+            'references_parser=references_parser.cli:main'
+        ]
+    }
 )
