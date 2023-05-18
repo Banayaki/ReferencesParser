@@ -6,12 +6,12 @@ from datetime import datetime
 
 
 bibtex_format = """@online{{{title_key},
-    title={title},
-    date={date},
-    year={year},
-    author={{TODO: Author or place or corp here}},
+    title={{{title}}},
+    date={{{date}}},
+    year={{{year}}},
+    origin={{TODO: Author or place or corp here}},
     base={{TODO: Base resource title here}},
-    url={url}
+    url={{{url}}}
 }}"""
 
 
@@ -26,18 +26,20 @@ def convert_urls_to_bibtex(file_content: str):
     bibtex_dict = p.loads(file_content, p.bparser.BibTexParser(ignore_nonstandard_types=False))
 
     for commentary in bibtex_dict.comments:
-        if 'http' in commentary:
-            r = requests.get(commentary)
-            soup = BeautifulSoup(r.content, 'html.parser')
-            title = soup.title.string
-            bibtex = bibtex_format.format(
-                title_key=make_title_key(title),
-                title=title,
-                date=today,
-                year=this_year,
-                url=commentary
-            )
-            
-            file_content = file_content.replace(commentary, bibtex)
+        for url in commentary.split('\n'):
+            print(url)
+            if 'http' in url:
+                r = requests.get(url)
+                soup = BeautifulSoup(r.content, 'html.parser')
+                title = soup.title.string
+                bibtex = bibtex_format.format(
+                    title_key=make_title_key(title),
+                    title=title,
+                    date=today,
+                    year=this_year,
+                    url=url
+                )
+                
+                file_content = file_content.replace(url, bibtex)
     
     return file_content            

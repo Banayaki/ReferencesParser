@@ -20,11 +20,15 @@ class SsauParser:
         origin = bibtex_entry["origin"]
         url = bibtex_entry["url"]
         date = bibtex_entry["date"]
+        address = bibtex_entry.get("address")
         
         if base and len(base) > 0:
             result += " // " + base
         result += " / " + origin
-        result += SEP_DASH + "[Б.м.], " + year
+        if address is None:
+            result += SEP_DASH + "[Б.м.], " + year
+        else:
+            result += SEP_DASH + f"{address}, " + year
         result += SEP_DASH + "URL: "
         result += url
         result += f" (дата обращения: {date})"
