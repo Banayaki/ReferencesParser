@@ -1,20 +1,20 @@
 from enum import Enum
 from typing import List, Optional, Tuple, Union
 
-from pydantic import BaseModel, root_validator, validator
 import bibtexparser as p
+from pydantic import BaseModel, root_validator, validator
 
 
 class Bibtex(BaseModel):
     class Types(str, Enum):
-        Article = 'article'
-        Proceedings = 'inproceedings'
-        Website = 'online'
-    
+        Article = "article"
+        Proceedings = "inproceedings"
+        Website = "online"
+
     ENTRYTYPE: Types
     title: str
     year: str
-    
+
     doi: Optional[str]
     journal: Optional[str]
     author: Optional[Union[str, List[str]]]
@@ -32,26 +32,25 @@ class Bibtex(BaseModel):
     date: Optional[str]
     # Books-related
     issn: Optional[str]
-    
+
     # Calculated fields
     pages_list: List[str] = []
-    
+
     @root_validator
     def initialize_and_validate(cls, values):
         """
         Since pydantic does not support computed fields yet
-        this method provides a workaround 
+        this method provides a workaround
         """
-        pages = values['pages']
-        values['pages_list'] = [] if pages is None else pages.split("--")
+        pages = values["pages"]
+        values["pages_list"] = [] if pages is None else pages.split("--")
         return values
-        
-    
-    @validator('title')
+
+    @validator("title")
     def title_rules(cls, title: str):
         """
         Sometimes the title contains '.' in the end.
-        Dot in the end is prohibited 
+        Dot in the end is prohibited
 
         Args:
             title (str): title to be sanitized
@@ -59,7 +58,6 @@ class Bibtex(BaseModel):
         Returns:
             str: sanitized title
         """
-        if title.endswith('.'):
+        if title.endswith("."):
             return title[:-1]
         return title
-    
