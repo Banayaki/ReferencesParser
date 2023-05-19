@@ -80,6 +80,6 @@ class IEEEParser(SsauParser):
         authors_upd += "and " + authors_list[-1]
         return authors_upd
 
-    def __call__(self, bibtex: str) -> List[str | None]:
+    def __call__(self, bibtex: str):
         raise Exception("Hasn't been tested yet")
         return super().__call__(bibtex)
