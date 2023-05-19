@@ -4,6 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from datetime import datetime
 
+from tqdm import tqdm
+
 
 bibtex_format = """@online{{{title_key},
     title={{{title}}},
@@ -20,26 +22,36 @@ def make_title_key(title):
 
 
 def convert_urls_to_bibtex(file_content: str):
+    errors = {}
+    
     today = datetime.now().strftime('%d.%m.%Y')
     this_year = datetime.now().strftime('%Y')
     
     bibtex_dict = p.loads(file_content, p.bparser.BibTexParser(ignore_nonstandard_types=False))
-
-    for commentary in bibtex_dict.comments:
-        for url in commentary.split('\n'):
-            print(url)
-            if 'http' in url:
-                r = requests.get(url)
-                soup = BeautifulSoup(r.content, 'html.parser')
-                title = soup.title.string
-                bibtex = bibtex_format.format(
-                    title_key=make_title_key(title),
-                    title=title,
-                    date=today,
-                    year=this_year,
-                    url=url
-                )
-                
-                file_content = file_content.replace(url, bibtex)
+    urls = (url for comment in bibtex_dict.comments for url in comment.split("\n"))
     
-    return file_content            
+    for url in tqdm(urls):
+        if 'http' in url:
+            try:
+                r = requests.get(url)
+                print(r.status_code)
+                if r.status_code != 200:
+                    raise Exception("Cannot perform request")
+            except Exception as e:
+                errors[url] = {'Cannot get the page': 'Try to enable VPN?'}
+                continue
+            
+            soup = BeautifulSoup(r.content, 'html.parser')
+            title = soup.title.string
+            bibtex = bibtex_format.format(
+                title_key=make_title_key(title),
+                title=title,
+                date=today,
+                year=this_year,
+                url=url
+            )
+            
+            file_content = file_content.replace(url, bibtex)
+    
+    return file_content, errors
+    

@@ -1,9 +1,13 @@
-from .SsauParser import SsauParser
+from .ssau_parser import SsauParser
 
 SEP = ', '
 
 
 class IEEEParser(SsauParser):
+    def __init__(self):
+        super().__init__()
+        raise Exception("Hasn't been tested yet")
+    
     """
     Parses Bibtext into IEEE citation format.
     Official citation guideline:

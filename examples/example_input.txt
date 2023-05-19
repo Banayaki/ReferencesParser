@@ -1,11 +1,3 @@
-@online{Google,
-    title={Google},
-    date={18.05.2023},
-    year={2023},
-    origin={TODO: Author or place or corp here},
-    base={TODO: Base resource title here},
-    url={https://google.com}
-}
 @article{birk1994airborne,
   title={Airborne hyperspectral sensor systems},
   author={Birk, Ronald J and McCord, Thomas B},
@@ -33,4 +25,435 @@
   number={4},
   pages={747--756},
   year={2016}
+}
+@article{wu2023nondestructive,
+  title={Nondestructive Determination of Leaf Nitrogen Content in Corn by Hyperspectral Imaging Using Spectral and Texture Fusion},
+  author={Wu, Ling and Gong, Yuanjuan and Bai, Xiaoping and Wang, Wei and Wang, Zhuo},
+  journal={Applied Sciences},
+  volume={13},
+  number={3},
+  pages={1910},
+  year={2023},
+  publisher={MDPI}
+}
+@article{ge2021estimating,
+  title={Estimating agricultural soil moisture content through UAV-based hyperspectral images in the arid region},
+  author={Ge, Xiangyu and Ding, Jianli and Jin, Xiuliang and Wang, Jingzhe and Chen, Xiangyue and Li, Xiaohang and Liu, Jie and Xie, Boqiang},
+  journal={Remote Sensing},
+  volume={13},
+  number={8},
+  pages={1562},
+  year={2021},
+  publisher={MDPI}
+}
+@article{sankey2017uav,
+  title={UAV lidar and hyperspectral fusion for forest monitoring in the southwestern USA},
+  author={Sankey, Temuulen and Donager, Jonathon and McVay, Jason and Sankey, Joel B},
+  journal={Remote Sensing of Environment},
+  volume={195},
+  pages={30--43},
+  year={2017},
+  publisher={Elsevier}
+}
+@article{shaik2022automatic,
+  title={An automatic procedure for forest fire fuel mapping using hyperspectral (PRISMA) imagery: A semi-supervised classification approach},
+  author={Shaik, Riyaaz Uddien and Laneve, Giovanni and Fusilli, Lorenzo},
+  journal={Remote Sensing},
+  volume={14},
+  number={5},
+  pages={1264},
+  year={2022},
+  publisher={MDPI}
+}
+@article{ye2019landslide,
+  title={Landslide detection of hyperspectral remote sensing data based on deep learning with constrains},
+  author={Ye, Chengming and Li, Yao and Cui, Peng and Liang, Li and Pirasteh, Saeid and Marcato, Jos{\'e} and Goncalves, Wesley Nunes and Li, Jonathan},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume={12},
+  number={12},
+  pages={5047--5060},
+  year={2019},
+  publisher={IEEE}
+}
+@article{van2020spatially,
+  title={A spatially explicit deep learning neural network model for the prediction of landslide susceptibility},
+  author={Van Dao, Dong and Jaafari, Abolfazl and Bayat, Mahmoud and Mafi-Gholami, Davood and Qi, Chongchong and Moayedi, Hossein and Van Phong, Tran and Ly, Hai-Bang and Le, Tien-Thinh and Trinh, Phan Trong and others},
+  journal={Catena},
+  volume={188},
+  pages={104451},
+  year={2020},
+  publisher={Elsevier}
+}
+@article{halicek2017deep,
+  title={Deep convolutional neural networks for classifying head and neck cancer using hyperspectral imaging},
+  author={Halicek, Martin and Lu, Guolan and Little, James V and Wang, Xu and Patel, Mihir and Griffith, Christopher C and El-Deiry, Mark W and Chen, Amy Y and Fei, Baowei},
+  journal={Journal of biomedical optics},
+  volume={22},
+  number={6},
+  pages={060503--060503},
+  year={2017},
+  publisher={Society of Photo-Optical Instrumentation Engineers}
+}
+@article{ortega2018detecting,
+  title={Detecting brain tumor in pathological slides using hyperspectral imaging},
+  author={Ortega, Samuel and Fabelo, Himar and Camacho, Rafael and De la Luz Plaza, Mar{\'\i}a and Callic{\'o}, Gustavo M and Sarmiento, Roberto},
+  journal={Biomedical optics express},
+  volume={9},
+  number={2},
+  pages={818--831},
+  year={2018},
+  publisher={Optica Publishing Group}
+}
+@article{wu2022review,
+  title={Review on the Application of Hyperspectral Imaging Technology of the Exposed Cortex in Cerebral Surgery},
+  author={Wu, Yue and Xu, Zhongyuan and Yang, Wenjian and Ning, Zhiqiang and Dong, Hao},
+  journal={Frontiers in Bioengineering and Biotechnology},
+  volume={10},
+  year={2022},
+  pages={906728},
+  publisher={Frontiers Media SA}
+}
+@article{armstrong2020percutaneous,
+  title={A percutaneous catheter for in vivo hyperspectral imaging of cardiac tissue: Challenges, solutions and future directions},
+  author={Armstrong, Kenneth and Larson, Cinnamon and Asfour, Huda and Ransbury, Terry and Sarvazyan, Narine},
+  journal={Cardiovascular engineering and technology},
+  volume={11},
+  pages={560--575},
+  year={2020},
+  publisher={Springer}
+}
+@inproceedings{ivliev2019compact,
+  title={A compact imaging hyperspectrometer},
+  author={Ivliev, NA and Podlipnov, VV and Skidanov, RV},
+  booktitle={Journal of Physics: Conference Series},
+  volume={1368},
+  number={2},
+  pages={022053},
+  year={2019},
+  organization={IOP Publishing}
+}
+@online{EOSSATSatelliteConstellationToServeAgriculturalNeeds,
+    title={EOS SAT Satellite Constellation To Serve Agricultural Needs.},
+    date={18.05.2023},
+    year={2023},
+    origin={EOS Data Analytics,Inc},
+    address={Suite 180 Mountain View, CA 94040, USA},
+    url={https://eos.com/eossat/}
+}
+@online{ERRORTherequestcouldnotbesatisfied,
+    title={16	GeoEye-1 Satellite Sensor},
+    date={18.05.2023},
+    year={2023},
+    origin={Satellite Imaging Corp},
+    base={Satellite Maps, Satellite Imagery, GIS Data | Satellite Imaging Corp},
+    url={https://www.satimagingcorp.com/satellite-sensors/geoeye-1/}
+}
+@online{HyperspectralRemoteSensingScenesGrupodeInteligenciaComputacionalGIC,
+    title={Hyperspectral Remote Sensing Scenes - Grupo de Inteligencia Computacional (GIC)},
+    date={18.05.2023},
+    year={2023},
+    origin={M. Graña, M.A. Veganzons, B. Ayerdi.},
+    url={https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes}
+}
+@online{PredikteraHyperspectralImagingSoftware,
+    title={Prediktera – Hyperspectral Imaging Software},
+    date={18.05.2023},
+    year={2023},
+    origin={Prediktera - Software solutions for hyper- and multi-spectral imaging},
+    address={Tvistevägen 48A, SWEDEN},
+    url={https://prediktera.com/}
+}
+@online{403Forbidden,
+    title={Hyperspectral Imaging Software | ClydeHSI},
+    date={18.05.2023},
+    year={2023},
+    origin={Clyde Hyperspectral Imaging and Technology Ltd., (ClydeHSI)},
+    base={19	Hyperspectral Imaging Software},
+    address={1 Aurora Avenue, Clydebank, G81 1BF, UK, 2023},
+    url={https://www.clydehsi.com/hyperspectral-imaging-software-spectrasens}
+}
+@online{IDBIndexDataBase,
+    title={IDB - Index DataBase},
+    date={18.05.2023},
+    year={2023},
+    origin={The IDB Project},
+    address={University of Bonn, Bonn},
+    url={https://www.indexdatabase.de/}
+}
+@article{asrar1984estimating,
+  title={Estimating absorbed photosynthetic radiation and leaf area index from spectral reflectance in wheat 1},
+  author={Asrar, GQ and Fuchs, M and Kanemasu, ET and Hatfield, JL},
+  journal={Agronomy journal},
+  volume={76},
+  number={2},
+  pages={300--306},
+  year={1984},
+  publisher={Wiley Online Library}
+}
+@article{li2022survey,
+  title={A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects.},
+  author={Li, Z and Liu, F and Yang, W and Peng, S and Zhou, J},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={33},
+  number={12},
+  pages={6999--7019},
+  year={2022}
+}
+@inproceedings{haque2019spectral,
+  title={Spectral-spatial feature extraction using PCA and multi-scale deep convolutional neural network for hyperspectral image classification},
+  author={Haque, Md Rakibul and Mishu, Sadia Zaman},
+  booktitle={2019 22nd International Conference on Computer and Information Technology (ICCIT)},
+  pages={1--6},
+  year={2019},
+  organization={IEEE}
+}
+@inproceedings{hasan2019comparison,
+  title={A comparison between support vector machine (SVM) and convolutional neural network (CNN) models for hyperspectral image classification},
+  author={Hasan, Hayder and Shafri, Helmi ZM and Habshi, Mohammed},
+  booktitle={IOP Conference Series: Earth and Environmental Science},
+  volume={357},
+  number={1},
+  pages={012035},
+  year={2019},
+  organization={IOP Publishing}
+}
+@article{uddin2021information,
+  title={Information-theoretic feature selection with segmentation-based folded principal component analysis (PCA) for hyperspectral image classification},
+  author={Uddin, Md Palash and Mamun, Md Al and Afjal, Masud Ibn and Hossain, Md Ali},
+  journal={International Journal of Remote Sensing},
+  volume={42},
+  number={1},
+  pages={286--321},
+  year={2021},
+  publisher={Taylor \& Francis}
+}
+@article{ye2020residual,
+  title={Residual deep PCA-based feature extraction for hyperspectral image classification},
+  author={Ye, Minchao and Ji, Chenxi and Chen, Hong and Lei, Ling and Lu, Huijuan and Qian, Yuntao},
+  journal={Neural Computing and Applications},
+  volume={32},
+  pages={14287--14300},
+  year={2020},
+  publisher={Springer}
+}
+@article{ren2020improved,
+  title={Improved k-means and spectral matching for hyperspectral mineral mapping},
+  author={Ren, Zhongliang and Sun, Lin and Zhai, Qiuping},
+  journal={International Journal of Applied Earth Observation and Geoinformation},
+  volume={91},
+  pages={102154},
+  year={2020},
+  publisher={Elsevier}
+}
+@article{liu2021estimating,
+  title={Estimating wheat fractional vegetation cover using a density peak k-means algorithm based on hyperspectral image data},
+  author={LIU, Da-zhong and YANG, Fei-fei and LIU, Sheng-ping},
+  journal={Journal of Integrative Agriculture},
+  volume={20},
+  number={11},
+  pages={2880--2891},
+  year={2021},
+  publisher={Elsevier}
+}
+@article{cao2020hyperspectral,
+  title={Hyperspectral image classification with convolutional neural network and active learning},
+  author={Cao, Xiangyong and Yao, Jing and Xu, Zongben and Meng, Deyu},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={58},
+  number={7},
+  pages={4604--4616},
+  year={2020},
+  publisher={IEEE}
+}
+@article{shi2019multiscale,
+  title={Multiscale superpixel-based hyperspectral image classification using recurrent neural networks with stacked autoencoders},
+  author={Shi, Cheng and Pun, Chi-Man},
+  journal={IEEE Transactions on Multimedia},
+  volume={22},
+  number={2},
+  pages={487--501},
+  year={2019},
+  publisher={IEEE}
+}
+@article{yao2023deep,
+  title={Deep hybrid: multi-graph neural network collaboration for hyperspectral image classification},
+  author={Yao, Ding and Zhi-li, Zhang and Xiao-feng, Zhao and Wei, Cai and Fang, He and Yao-ming, Cai and Cai, Wei-Wei},
+  journal={Defence Technology},
+  volume={23},
+  pages={164--176},
+  year={2023},
+  publisher={Elsevier}
+}
+@article{hong2020multimodal,
+  title={Multimodal GANs: Toward crossmodal hyperspectral--multispectral image segmentation},
+  author={Hong, Danfeng and Yao, Jing and Meng, Deyu and Xu, Zongben and Chanussot, Jocelyn},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={59},
+  number={6},
+  pages={5103--5113},
+  year={2020},
+  publisher={IEEE}
+}
+@article{ghaderizadeh2021hyperspectral,
+  title={Hyperspectral image classification using a hybrid 3D-2D convolutional neural networks},
+  author={Ghaderizadeh, Saeed and Abbasi-Moghadam, Dariush and Sharifi, Alireza and Zhao, Na and Tariq, Aqil},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume={14},
+  pages={7570--7588},
+  year={2021},
+  publisher={IEEE}
+}
+@article{bing2019deep,
+  title={Deep 3D convolutional network combined with spatial-spectral features for hyperspectral image classification},
+  author={Bing, LIU and Xuchu, YU and Pengqiang, ZHANG and Xiong, TAN},
+  journal={Acta Geodaetica et Cartographica Sinica},
+  volume={48},
+  number={1},
+  pages={53},
+  year={2019}
+}
+@article{MOBARAKI2018174,
+title = {HYPER-Tools. A graphical user-friendly interface for hyperspectral image analysis},
+journal = {Chemometrics and Intelligent Laboratory Systems},
+volume = {172},
+pages = {174-187},
+year = {2018},
+issn = {0169-7439},
+doi = {https://doi.org/10.1016/j.chemolab.2017.11.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0169743917306305},
+author = {Nabiollah Mobaraki and José Manuel Amigo},
+keywords = {HYPER-Tools, Hypertools, Hyperspectral image analysis, Chemometrics, Image analysis, MATLAB},
+abstract = {HYPER-Tools is a new graphical user-friendly interface (GUI) especially designed for the analysis of hyperspectral images. This easy-to-use interface works under Matlab environment and integrates fundamental types of spectral and spatial pre-processing methods as well as the main chemometric tools (exploratory data analysis, clustering, regression, and classification) for the comprehensive analysis of hyperspectral images. The main features of HYPER-Tools are the powerful visualization tools implemented, the availability of working with several images simultaneously and the easiness of the interaction of the user with the interface. Together with the GUI, several tutorials and videos are provided in the official website (https://www.hypertools.org/) showing the working procedure of HYPER-Tools step by step in different situations.}
+}
+@online{MathWorksMakersofMATLABandSimulinkMATLABSimulink,
+    title={MathWorks - Makers of MATLAB and Simulink - MATLAB & Simulink},
+    date={18.05.2023},
+    year={2023},
+    origin={The MathWorks, Inc},
+    url={https://www.mathworks.com/}
+}
+@online{CopterSpaceHYPERSPECTRUM,
+    title={CopterSpace  » HYPERSPECTRUM},
+    date={18.05.2023},
+    year={2023},
+    origin={ООО «Байт-Самара»},
+    base={CopterSpace},
+    address={Самара, ул. Ново-Садовая, 106},
+    url={http://copter.space/hyperspectrum/}
+}
+@article{paringer2021formation,
+  title={Formation of an informative index for recognizing specified objects in hyperspectral data},
+  author={Paringer, RA and Mukhin, AV and Kupriyanov, AV},
+  journal={Computer Optics},
+  volume={45},
+  number={6},
+  pages={873--878},
+  year={2021}
+}
+@inproceedings{мухин2022применение,
+  title={Применение нейросетевых алгоритмов для решения задачи семантической сегментации гиперспектральных данных},
+  author={Мухин, АВ and Грибанов, ДН and Парингер, РА},
+  booktitle={Информационные технологии и нанотехнологии (ИТНТ-2022)},
+  pages={40102--40102},
+  year={2022}
+}
+@online{InformativeFeatureSelectionPyPI,
+    title={InformativeFeatureSelection · PyPI},
+    date={18.05.2023},
+    year={2023},
+    origin={Мухин АВ},
+    base={PyPI | The Python Package Index},
+    url={https://pypi.org/project/InformativeFeatureSelection/}
+}
+@inproceedings{ronneberger2015u,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={Medical Image Computing and Computer-Assisted Intervention--MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+@article{he2020deep,
+  title={Deep residual learning for image recognition (2015)},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  journal={arXiv preprint arXiv:1512.03385},
+  volume={730},
+  year={2020}
+}
+@inproceedings{tian2017l2,
+  title={L2-net: Deep learning of discriminative patch descriptor in euclidean space},
+  author={Tian, Yurun and Fan, Bin and Wu, Fuchao},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={661--669},
+  year={2017}
+}
+@article{mukhin2022semantic,
+  title={Semantic Segmentation of Hyperspectral Imaging Using Convolutional Neural Networks},
+  author={Mukhin, A and Danil, G and Paringer, R},
+  journal={Optical Memory and Neural Networks},
+  volume={31},
+  number={Suppl 1},
+  pages={38--47},
+  year={2022},
+  publisher={Springer}
+} 
+@inproceedings{mukhin2021feature,
+  title={Feature selection algorithm with feature space separability estimation using discriminant analysis},
+  author={Mukhin, Artem and Paringer, Rustam and Ilyasova, Nataly},
+  booktitle={2021 International Conference on Information Technology and Nanotechnology (ITNT)},
+  pages={1--4},
+  year={2021},
+  organization={IEEE}
+}
+@online{HSIDatasetAPIPyPI,
+    title={HSI-Dataset-API · PyPI},
+    date={18.05.2023},
+    year={2023},
+    origin={Мухин АВ},
+    base={PyPI | The Python Package Index},
+    url={https://pypi.org/project/HSI-Dataset-API/}
+}
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+@article{loshchilov2016sgdr,
+  title={Sgdr: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1608.03983},
+  year={2016}
+}
+@inproceedings{lin2017focal,
+  title={Focal loss for dense object detection},
+  author={Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Doll{\'a}r, Piotr},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2980--2988},
+  year={2017}
+}
+@article{vinoski2006advanced,
+  title={Advanced message queuing protocol},
+  author={Vinoski, Steve},
+  journal={IEEE Internet Computing},
+  volume={10},
+  number={6},
+  pages={87--89},
+  year={2006},
+  publisher={IEEE}
+}
+@online{TheC4modelforvisualisingsoftwarearchitecture,
+    title={The C4 model for visualising software architecture},
+    date={18.05.2023},
+    year={2023},
+    origin={Simon Brown},
+    url={https://c4model.com/}
+}
+@online{vidisalgorithmsapiPyPI,
+    title={vidis-algorithms-api · PyPI},
+    date={18.05.2023},
+    year={2023},
+    origin={Мухин АВ},
+    base={PyPI | The Python Package Index},
+    url={https://pypi.org/project/vidis-algorithms-api/}
 }

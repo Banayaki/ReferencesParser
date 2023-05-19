@@ -1,7 +1,11 @@
 from datetime import datetime
+from typing import List, Optional
 from duckpy import Client
 
 import bibtexparser as p
+from tqdm import tqdm
+
+from references_parser.models import BibtexSsau, Bibtex
 
 # Constant which stands for the following template: ". (long dash) " or ". -- "
 SEP_DASH = ". \u2012 "
@@ -11,45 +15,39 @@ class SsauParser:
     
     def __init__(self):
         self.search_client = Client()
+        self.errors = {}
     
-    def parse_website(self, bibtex_entry: dict):
-        result = bibtex_entry["title"]
+    def parse_website(self, bibtex: BibtexSsau):
+        result = bibtex.title
         
-        base = bibtex_entry.get("base")
-        year = bibtex_entry["year"]
-        origin = bibtex_entry["origin"]
-        url = bibtex_entry["url"]
-        date = bibtex_entry["date"]
-        address = bibtex_entry.get("address")
-        
-        if base and len(base) > 0:
-            result += " // " + base
-        result += " / " + origin
-        if address is None:
-            result += SEP_DASH + "[Б.м.], " + year
+        if bibtex.base is not None and len(bibtex.base) > 0:
+            result += " // " + bibtex.base
+        result += " / " + bibtex.origin
+        if bibtex.address is None:
+            result += SEP_DASH + "[Б.м.], " + bibtex.year
         else:
-            result += SEP_DASH + f"{address}, " + year
+            result += SEP_DASH + f"{bibtex.address}, " + bibtex.year
         result += SEP_DASH + "URL: "
-        result += url
-        result += f" (дата обращения: {date})"
+        result += bibtex.url
+        result += f" (дата обращения: {bibtex.date})."
         return result
     
-    def parse_arxiv(self, bibtex_entry: dict):
+    def parse_arxiv(self, bibtex: BibtexSsau):
         """
         In case of reference on arxiv.org
         Le, Q. Distributed Representations of Sentences and Documents / Q. Le,
         T. Mikolov // ArXiv / Cornell University. – 2014. – URL: https://arxiv.org/abs/1405.4053 (дата обращения: 03.11.2020)
         """
-        first_author, authors = self._parse_authors(bibtex_entry["author"])
-        title = bibtex_entry["title"]
-        year = bibtex_entry["year"]
-        
-        url = bibtex_entry.get("url")
+        first_author, authors = bibtex.get_parsed_authors()
         today = datetime.now().strftime('%d.%m.%Y')
         
-        if url is None:
-            results = self.search_client.search(f"arxiv {title}")
-            url = results[0]['url']
+        if bibtex.url is None:
+            try:
+                results = self.search_client.search(f"arxiv {bibtex.title}")
+                url = results[0]['url']
+            except Exception as e:
+                self.errors[bibtex.title] = {'Error occured while searching': str(e)}
+                return None
             
         result = ""
         if first_author is not None:
@@ -57,56 +55,50 @@ class SsauParser:
         
         return (
             result
-            + title
+            + bibtex.title
             + " / "
             + authors
             + " // ArXiv / Cornell University"
             + SEP_DASH
-            + year
+            + bibtex.year
             + SEP_DASH
-            + f"URL: {url} (дата обращения: {today})"
+            + f"URL: {url} (дата обращения: {today})."
             )
 
-    def parse_article(self, bibtex_entry: dict):
+    def parse_article(self, bibtex: BibtexSsau):
         """
         Parse bibtex annotated with @article
         """
-        try:
-            journal = bibtex_entry["journal"]
-            if "arXiv" in journal:
-                raise Exception("Reference from ARXIV")
-        except:
-            return self.parse_arxiv(bibtex_entry)
+        if bibtex.journal is not None and "arXiv" in bibtex.journal:
+            return self.parse_arxiv(bibtex)
         
-        first_author, authors = self._parse_authors(bibtex_entry["author"])
-        title = bibtex_entry["title"]
-        year = bibtex_entry["year"]
+        first_author, authors = bibtex.get_parsed_authors()
         
         result = ""
         if first_author is not None:
             result += first_author + " "
-
+            
         result = (
             result
-            + title
+            + bibtex.title
             + " / "
             + authors
             + " // "
-            + journal
+            + bibtex.journal
             + SEP_DASH
-            + year
+            + bibtex.year
         )
 
-        number = "" if "number" not in bibtex_entry else f"({bibtex_entry['number']})"
+        number = f"({bibtex.number})" if bibtex.number is not None else ""
         volume = (
-            ""
-            if "volume" not in bibtex_entry
-            else f"Vol. {bibtex_entry['volume']}{number}"
+            f"Vol. {bibtex.volume}{number}"
+            if bibtex.volume is not None
+            else ""
         )
         if len(volume) != 0:
             result += SEP_DASH + volume
 
-        pages = [] if "pages" not in bibtex_entry else bibtex_entry["pages"].split("--")
+        pages = bibtex.pages_list
         if len(pages) == 0:
             pass
         elif len(pages) == 1:
@@ -115,19 +107,15 @@ class SsauParser:
             result += SEP_DASH + f"P. {pages[0]}-{pages[1]}"
         return result + "."
 
-    def parse_proceedings(self, bibtex_entry: dict):
+    def parse_proceedings(self, bibtex: BibtexSsau):
         """
         Parse bibtex annotated with @inproceedings
         """
-        first_author, authors = self._parse_authors(bibtex_entry["author"])
-        title = bibtex_entry["title"]
-        booktitle = bibtex_entry["booktitle"]
-        year = bibtex_entry["year"]
-        pages = [] if "pages" not in bibtex_entry else bibtex_entry["pages"].split("--")
+        first_author, authors = bibtex.get_parsed_authors()
         org_year = (
-            year
-            if "organization" not in bibtex_entry
-            else f"{bibtex_entry['organization']}, {year}"
+             f"{bibtex.organization}, {bibtex.year}"
+            if bibtex.organization is not None
+            else bibtex.year
         )
         
         result = ""
@@ -136,86 +124,53 @@ class SsauParser:
 
         result = (
             result
-            + title
+            + bibtex.title
             + " / "
             + authors
             + " // "
-            + booktitle
+            + bibtex.booktitle
             + SEP_DASH
             + org_year
         )
-        if len(pages) == 1:
+        
+        number = f"({bibtex.number})" if bibtex.number is not None else ""
+        volume = (
+            f"Vol. {bibtex.volume}{number}"
+            if bibtex.volume is not None
+            else ""
+        )
+        if len(volume) != 0:
+            result += SEP_DASH + volume
+            
+        pages = bibtex.pages_list
+        if len(pages) == 0:
+            pass
+        elif len(pages) == 1:
             result += SEP_DASH + f"P. {pages[0]}"
         elif len(pages) == 2:
             result += SEP_DASH + f"P. {pages[0]}-{pages[1]}"
-
         return result + "."
 
-    def _parse_authors(self, author_string, return_all=False):
-        """
-        1. Авторов < 4
-        Фамилия, инициалы первого автора. Основное заглавие : 
-        добавочное заглавие / Инициалы и фамилии первого, 
-        второго, третьего автора
-        2. Авторов == 4
-        Основное заглавие : добавочное заглавие / Инициалы и 
-        фамилии всех четырех авторов ;
-        3. Авторов > 4
-        Основное заглавие : добавочное заглавие / Инициалы и 
-        фамилии первых трех авторов [и др.]
-        """
-        def parse_single_author(str_author):
-            result = ""
-            splitted_author = p.customization.splitname(str_author)
-            for initial in splitted_author["first"]:
-                result += initial[0] + "."
-            return result + " " + "".join(splitted_author["last"]) + ", "
-
-        authors = ""
-        first_author = ""
-
-        first_author_unparsed = author_string[0]
-        splitted_first_author = p.customization.splitname(first_author_unparsed)
-        first_author += "".join(splitted_first_author["last"]) + ", "
-        for initial in splitted_first_author["first"]:
-            first_author += initial[0]
-        first_author += "."
-
-        if len(author_string) < 4 or return_all:
-            for str_author in author_string:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
-        elif len(author_string) == 4:
-            for str_author in author_string:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
-            first_author = None
-        else:
-            for str_author in author_string[:3]:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
-            first_author = None
-            authors = f"{authors} [и др.]"
-        return first_author, authors
-
-    def __call__(self, bibtex: str):
+    def __call__(self, bibtex: str) -> List[Optional[str]]:
         if bibtex.endswith(".txt"):
             with open(bibtex, "r") as f:
                 bibtex_dict = p.load(f, p.bparser.BibTexParser(ignore_nonstandard_types=False))
         else:
             bibtex_dict = p.loads(bibtex, p.bparser.BibTexParser(ignore_nonstandard_types=False))
         result = []
-        for bibtex_entry in bibtex_dict.entries:
+        for bibtex_entry in tqdm(bibtex_dict.entries):
             # The following line will parse string with authors in list of authors
             bibtex_entry = p.customization.author(bibtex_entry)
             bibtex_entry = p.customization.convert_to_unicode(bibtex_entry)
-            bibtex_type = bibtex_entry["ENTRYTYPE"]
-            if bibtex_type == "article":
-                result.append(self.parse_article(bibtex_entry))
-            elif bibtex_type == "inproceedings":
-                result.append(self.parse_proceedings(bibtex_entry))
-            elif bibtex_type == "online":
-                result.append(self.parse_website(bibtex_entry))
+            
+            bibtex_model = BibtexSsau(**bibtex_entry)
+            
+            if bibtex_model.ENTRYTYPE == Bibtex.Types.Article:
+                result.append(self.parse_article(bibtex_model))
+            elif bibtex_model.ENTRYTYPE == Bibtex.Types.Proceedings:
+                result.append(self.parse_proceedings(bibtex_model))
+            elif bibtex_model.ENTRYTYPE == Bibtex.Types.Website:
+                result.append(self.parse_website(bibtex_model))
             else:
-                raise Exception(f"Unsupported bibtex type: {bibtex_entry['ENTRYTYPE']}")
-        return result
+                raise Exception(f"Unsupported bibtex type: {bibtex_model.ENTRYTYPE}")
+        return result, self.errors

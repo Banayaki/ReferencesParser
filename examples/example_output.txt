@@ -1,7 +1,52 @@
-Google // TODO: Base resource title here / TODO: Author or place or corp here. ‒ [Б.м.], 2023. ‒ URL: https://google.com (дата обращения: 18.05.2023)
-
 Birk, RJ. Airborne hyperspectral sensor systems / R.J. Birk, T.B. McCord // IEEE Aerospace and Electronic Systems Magazine. ‒ 1994. ‒ Vol. 9(10). ‒ P. 26-33.
-
-Novel miniaturized hyperspectral sensor for UAV and space applications / H. Saari, V. Aallos, A. Akujärvi [и др.] // Sensors, Systems, and Next-Generation Satellites XIII. ‒ SPIE, 2009. ‒ P. 517-528.
-
+Novel miniaturized hyperspectral sensor for UAV and space applications / H. Saari, V. Aallos, A. Akujärvi [и др.] // Sensors, Systems, and Next-Generation Satellites XIII. ‒ SPIE, 2009. ‒ Vol. 7474. ‒ P. 517-528.
 Detection of wheat powdery mildew by differentiating background factors using hyperspectral imaging / D. Zhang, F. Lin, Y. Huang, L. Zhang // International Journal of Agriculture & Biology. ‒ 2016. ‒ Vol. 18(4). ‒ P. 747-756.
+Nondestructive Determination of Leaf Nitrogen Content in Corn by Hyperspectral Imaging Using Spectral and Texture Fusion / L. Wu, Y. Gong, X. Bai [и др.] // Applied Sciences. ‒ 2023. ‒ Vol. 13(3). ‒ P. 1910.
+Estimating agricultural soil moisture content through UAV-based hyperspectral images in the arid region / X. Ge, J. Ding, X. Jin [и др.] // Remote Sensing. ‒ 2021. ‒ Vol. 13(8). ‒ P. 1562.
+UAV lidar and hyperspectral fusion for forest monitoring in the southwestern USA / T. Sankey, J. Donager, J. McVay, J.B. Sankey // Remote Sensing of Environment. ‒ 2017. ‒ Vol. 195. ‒ P. 30-43.
+Shaik, RU. An automatic procedure for forest fire fuel mapping using hyperspectral (PRISMA) imagery: A semi-supervised classification approach / R.U. Shaik, G. Laneve, L. Fusilli // Remote Sensing. ‒ 2022. ‒ Vol. 14(5). ‒ P. 1264.
+Landslide detection of hyperspectral remote sensing data based on deep learning with constrains / C. Ye, Y. Li, P. Cui [и др.] // IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing. ‒ 2019. ‒ Vol. 12(12). ‒ P. 5047-5060.
+A spatially explicit deep learning neural network model for the prediction of landslide susceptibility / D. VanDao, A. Jaafari, M. Bayat [и др.] // Catena. ‒ 2020. ‒ Vol. 188. ‒ P. 104451.
+Deep convolutional neural networks for classifying head and neck cancer using hyperspectral imaging / M. Halicek, G. Lu, J.V. Little [и др.] // Journal of biomedical optics. ‒ 2017. ‒ Vol. 22(6). ‒ P. 060503-060503.
+Detecting brain tumor in pathological slides using hyperspectral imaging / S. Ortega, H. Fabelo, R. Camacho [и др.] // Biomedical optics express. ‒ 2018. ‒ Vol. 9(2). ‒ P. 818-831.
+Review on the Application of Hyperspectral Imaging Technology of the Exposed Cortex in Cerebral Surgery / Y. Wu, Z. Xu, W. Yang [и др.] // Frontiers in Bioengineering and Biotechnology. ‒ 2022. ‒ Vol. 10. ‒ P. 906728.
+A percutaneous catheter for in vivo hyperspectral imaging of cardiac tissue: Challenges, solutions and future directions / K. Armstrong, C. Larson, H. Asfour [и др.] // Cardiovascular engineering and technology. ‒ 2020. ‒ Vol. 11. ‒ P. 560-575.
+Ivliev, N. A compact imaging hyperspectrometer / N. Ivliev, V. Podlipnov, R. Skidanov // Journal of Physics: Conference Series. ‒ IOP Publishing, 2019. ‒ Vol. 1368(2). ‒ P. 022053.
+EOS SAT Satellite Constellation To Serve Agricultural Needs / EOS Data Analytics,Inc. ‒ Suite 180 Mountain View, CA 94040, USA, 2023. ‒ URL: https://eos.com/eossat/ (дата обращения: 18.05.2023).
+16   GeoEye-1 Satellite Sensor // Satellite Maps, Satellite Imagery, GIS Data | Satellite Imaging Corp / Satellite Imaging Corp. ‒ [Б.м.], 2023. ‒ URL: https://www.satimagingcorp.com/satellite-sensors/geoeye-1/ (дата обращения: 18.05.2023).
+Hyperspectral Remote Sensing Scenes - Grupo de Inteligencia Computacional (GIC) / M. Graña, M.A. Veganzons, B. Ayerdi.. ‒ [Б.м.], 2023. ‒ URL: https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes (дата обращения: 18.05.2023).
+Prediktera – Hyperspectral Imaging Software / Prediktera - Software solutions for hyper- and multi-spectral imaging. ‒ Tvistevägen 48A, SWEDEN, 2023. ‒ URL: https://prediktera.com/ (дата обращения: 18.05.2023).
+Hyperspectral Imaging Software | ClydeHSI // 19    Hyperspectral Imaging Software / Clyde Hyperspectral Imaging and Technology Ltd., (ClydeHSI). ‒ 1 Aurora Avenue, Clydebank, G81 1BF, UK, 2023, 2023. ‒ URL: https://www.clydehsi.com/hyperspectral-imaging-software-spectrasens (дата обращения: 18.05.2023).
+IDB - Index DataBase / The IDB Project. ‒ University of Bonn, Bonn, 2023. ‒ URL: https://www.indexdatabase.de/ (дата обращения: 18.05.2023).
+Estimating absorbed photosynthetic radiation and leaf area index from spectral reflectance in wheat 1 / G. Asrar, M. Fuchs, E. Kanemasu, J. Hatfield // Agronomy journal. ‒ 1984. ‒ Vol. 76(2). ‒ P. 300-306.
+A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects / Z. Li, F. Liu, W. Yang [и др.] // IEEE Transactions on Neural Networks and Learning Systems. ‒ 2022. ‒ Vol. 33(12). ‒ P. 6999-7019.
+Haque, MR. Spectral-spatial feature extraction using PCA and multi-scale deep convolutional neural network for hyperspectral image classification / M.R. Haque, S.Z. Mishu // 2019 22nd International Conference on Computer and Information Technology (ICCIT). ‒ IEEE, 2019. ‒ P. 1-6.
+Hasan, H. A comparison between support vector machine (SVM) and convolutional neural network (CNN) models for hyperspectral image classification / H. Hasan, H.Z. Shafri, M. Habshi // IOP Conference Series: Earth and Environmental Science. ‒ IOP Publishing, 2019. ‒ Vol. 357(1). ‒ P. 012035.
+Information-theoretic feature selection with segmentation-based folded principal component analysis (PCA) for hyperspectral image classification / M.P. Uddin, M.A. Mamun, M.I. Afjal, M.A. Hossain // International Journal of Remote Sensing. ‒ 2021. ‒ Vol. 42(1). ‒ P. 286-321.
+Residual deep PCA-based feature extraction for hyperspectral image classification / M. Ye, C. Ji, H. Chen [и др.] // Neural Computing and Applications. ‒ 2020. ‒ Vol. 32. ‒ P. 14287-14300.
+Ren, Z. Improved k-means and spectral matching for hyperspectral mineral mapping / Z. Ren, L. Sun, Q. Zhai // International Journal of Applied Earth Observation and Geoinformation. ‒ 2020. ‒ Vol. 91. ‒ P. 102154.
+LIU, D. Estimating wheat fractional vegetation cover using a density peak k-means algorithm based on hyperspectral image data / D. LIU, F. YANG, S. LIU // Journal of Integrative Agriculture. ‒ 2021. ‒ Vol. 20(11). ‒ P. 2880-2891.
+Hyperspectral image classification with convolutional neural network and active learning / X. Cao, J. Yao, Z. Xu, D. Meng // IEEE Transactions on Geoscience and Remote Sensing. ‒ 2020. ‒ Vol. 58(7). ‒ P. 4604-4616.
+Shi, C. Multiscale superpixel-based hyperspectral image classification using recurrent neural networks with stacked autoencoders / C. Shi, C. Pun // IEEE Transactions on Multimedia. ‒ 2019. ‒ Vol. 22(2). ‒ P. 487-501.
+Deep hybrid: multi-graph neural network collaboration for hyperspectral image classification / D. Yao, Z. Zhi-li, Z. Xiao-feng [и др.] // Defence Technology. ‒ 2023. ‒ Vol. 23. ‒ P. 164-176.
+Multimodal GANs: Toward crossmodal hyperspectral--multispectral image segmentation / D. Hong, J. Yao, D. Meng [и др.] // IEEE Transactions on Geoscience and Remote Sensing. ‒ 2020. ‒ Vol. 59(6). ‒ P. 5103-5113.
+Hyperspectral image classification using a hybrid 3D-2D convolutional neural networks / S. Ghaderizadeh, D. Abbasi-Moghadam, A. Sharifi [и др.] // IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing. ‒ 2021. ‒ Vol. 14. ‒ P. 7570-7588.
+Deep 3D convolutional network combined with spatial-spectral features for hyperspectral image classification / L. Bing, Y. Xuchu, Z. Pengqiang, T. Xiong // Acta Geodaetica et Cartographica Sinica. ‒ 2019. ‒ Vol. 48(1). ‒ P. 53.
+Mobaraki, N. HYPER-Tools. A graphical user-friendly interface for hyperspectral image analysis / N. Mobaraki, J.M. Amigo // Chemometrics and Intelligent Laboratory Systems. ‒ 2018. ‒ Vol. 172. ‒ P. 174-187.
+MathWorks - Makers of MATLAB and Simulink - MATLAB & Simulink / The MathWorks, Inc. ‒ [Б.м.], 2023. ‒ URL: https://www.mathworks.com/ (дата обращения: 18.05.2023).
+CopterSpace  » HYPERSPECTRUM // CopterSpace / ООО «Байт-Самара». ‒ Самара, ул. Ново-Садовая, 106, 2023. ‒ URL: http://copter.space/hyperspectrum/ (дата обращения: 18.05.2023).
+Paringer, R. Formation of an informative index for recognizing specified objects in hyperspectral data / R. Paringer, A. Mukhin, A. Kupriyanov // Computer Optics. ‒ 2021. ‒ Vol. 45(6). ‒ P. 873-878.
+Мухин, А. Применение нейросетевых алгоритмов для решения задачи семантической сегментации гиперспектральных данных / А. Мухин, Д. Грибанов, Р. Парингер // Информационные технологии и нанотехнологии (ИТНТ-2022). ‒ 2022. ‒ P. 40102-40102.
+InformativeFeatureSelection · PyPI // PyPI | The Python Package Index / Мухин АВ. ‒ [Б.м.], 2023. ‒ URL: https://pypi.org/project/InformativeFeatureSelection/ (дата обращения: 18.05.2023).
+Ronneberger, O. U-net: Convolutional networks for biomedical image segmentation / O. Ronneberger, P. Fischer, T. Brox // Medical Image Computing and Computer-Assisted Intervention--MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18. ‒ Springer, 2015. ‒ P. 234-241.
+Deep residual learning for image recognition (2015) / K. He, X. Zhang, S. Ren, J. Sun // ArXiv / Cornell University. ‒ 2020. ‒ URL: https://arxiv.org/abs/1512.03385 (дата обращения: 19.05.2023).
+Tian, Y. L2-net: Deep learning of discriminative patch descriptor in euclidean space / Y. Tian, B. Fan, F. Wu // Proceedings of the IEEE conference on computer vision and pattern recognition. ‒ 2017. ‒ P. 661-669.
+Mukhin, A. Semantic Segmentation of Hyperspectral Imaging Using Convolutional Neural Networks / A. Mukhin, G. Danil, R. Paringer // Optical Memory and Neural Networks. ‒ 2022. ‒ Vol. 31(Suppl 1). ‒ P. 38-47.
+Mukhin, A. Feature selection algorithm with feature space separability estimation using discriminant analysis / A. Mukhin, R. Paringer, N. Ilyasova // 2021 International Conference on Information Technology and Nanotechnology (ITNT). ‒ IEEE, 2021. ‒ P. 1-4.
+HSI-Dataset-API · PyPI // PyPI | The Python Package Index / Мухин АВ. ‒ [Б.м.], 2023. ‒ URL: https://pypi.org/project/HSI-Dataset-API/ (дата обращения: 18.05.2023).
+Kingma, DP. Adam: A method for stochastic optimization / D.P. Kingma, J. Ba // ArXiv / Cornell University. ‒ 2014. ‒ URL: https://arxiv.org/abs/1412.6980 (дата обращения: 19.05.2023).
+Loshchilov, I. Sgdr: Stochastic gradient descent with warm restarts / I. Loshchilov, F. Hutter // ArXiv / Cornell University. ‒ 2016. ‒ URL: https://arxiv.org/abs/1608.03983 (дата обращения: 19.05.2023).
+Focal loss for dense object detection / T. Lin, P. Goyal, R. Girshick [и др.] // Proceedings of the IEEE international conference on computer vision. ‒ 2017. ‒ P. 2980-2988.
+Vinoski, S. Advanced message queuing protocol / S. Vinoski // IEEE Internet Computing. ‒ 2006. ‒ Vol. 10(6). ‒ P. 87-89.
+The C4 model for visualising software architecture / Simon Brown. ‒ [Б.м.], 2023. ‒ URL: https://c4model.com/ (дата обращения: 18.05.2023).
+vidis-algorithms-api · PyPI // PyPI | The Python Package Index / Мухин АВ. ‒ [Б.м.], 2023. ‒ URL: https://pypi.org/project/vidis-algorithms-api/ (дата обращения: 18.05.2023).
