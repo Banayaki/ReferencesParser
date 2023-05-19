@@ -1,2 +1,2 @@
-from .IeeeParser import IEEEParser
-from .SsauParser import SsauParser
+from .ieee_parser import IEEEParser
+from .ssau_parser import SsauParser
