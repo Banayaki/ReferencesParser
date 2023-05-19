@@ -1,3 +1,4 @@
+from typing import List, Optional
 from .ssau_parser import SsauParser
 
 SEP = ", "
@@ -6,7 +7,6 @@ SEP = ", "
 class IEEEParser(SsauParser):
     def __init__(self):
         super().__init__()
-        raise Exception("Hasn't been tested yet")
 
     """
     Parses Bibtext into IEEE citation format.
@@ -79,3 +79,7 @@ class IEEEParser(SsauParser):
             authors_upd += author + ", "
         authors_upd += "and " + authors_list[-1]
         return authors_upd
+
+    def __call__(self, bibtex: str) -> List[str | None]:
+        raise Exception("Hasn't been tested yet")
+        return super().__call__(bibtex)
