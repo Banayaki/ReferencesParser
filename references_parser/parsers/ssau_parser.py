@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Tuple, Dict
 
 import bibtexparser as p
 from duckpy import Client
@@ -143,7 +143,7 @@ class SsauParser:
             result += SEP_DASH + f"P. {pages[0]}-{pages[1]}"
         return result + "."
 
-    def __call__(self, bibtex: str) -> List[Optional[str]]:
+    def __call__(self, bibtex: str) -> Tuple[List[Optional[str]], Dict[str, dict]]:
         if bibtex.endswith(".txt"):
             with open(bibtex, "r") as f:
                 bibtex_dict = p.load(
