@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name='references_parser',
     packages=setuptools.find_packages(),
-    version='1.2.0',
+    version='1.2.1',
     description="Tool for parsing bibtex in ssau's format",
     long_description=long_description,
     long_description_content_type="text/markdown",
