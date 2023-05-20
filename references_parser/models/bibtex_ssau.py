@@ -6,7 +6,7 @@ from .bibtex import Bibtex
 
 
 class BibtexSsau(Bibtex):
-    def get_parsed_authors(self, return_all=False) -> Tuple[Optional[str], str]:
+    def get_parsed_authors(self, return_all=False, space_between_initials=False) -> Tuple[Optional[str], str]:
         """
         Perform authors entry parsing using following rules:
         1. Авторов < 4
@@ -25,36 +25,30 @@ class BibtexSsau(Bibtex):
         """
         author_string = self.author
 
+        last_names_joiner = "-"  # "" was used previously
+        initials_joiner = " " if space_between_initials else ""
+        authors_joiner = ", "
+
+        def merged_last_names(splitted_author):
+            return last_names_joiner.join(splitted_author["last"])
+
+        def all_first_name_initials(splitted_author):
+            return initials_joiner.join([f"{first_name[0]}." for first_name in splitted_author["first"]])
+
         def parse_single_author(str_author):
-            result = ""
             splitted_author = p.customization.splitname(str_author)
-            for initial in splitted_author["first"]:
-                result += initial[0] + "."
-            return result + " " + "".join(splitted_author["last"]) + ", "
+            return all_first_name_initials(splitted_author) + " " + merged_last_names(splitted_author)
 
-        authors = ""
-        first_author = ""
-
-        first_author_unparsed = author_string[0]
-        splitted_first_author = p.customization.splitname(first_author_unparsed)
-        first_author += "".join(splitted_first_author["last"]) + ", "
-        for initial in splitted_first_author["first"]:
-            first_author += initial[0]
-        first_author += "."
+        splitted_first_author = p.customization.splitname(author_string[0])
+        first_author = merged_last_names(splitted_first_author) + ", " + all_first_name_initials(splitted_first_author)
 
         if len(author_string) < 4 or return_all:
-            for str_author in author_string:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
+            authors = authors_joiner.join([parse_single_author(str_author) for str_author in author_string])
         elif len(author_string) == 4:
-            for str_author in author_string:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
+            authors = authors_joiner.join([parse_single_author(str_author) for str_author in author_string])
             first_author = None
         else:
-            for str_author in author_string[:3]:
-                authors += parse_single_author(str_author)
-            authors = authors[:-2]
+            authors = authors_joiner.join([parse_single_author(str_author) for str_author in author_string[:3]])
             first_author = None
             authors = f"{authors} [и др.]"
         return first_author, authors

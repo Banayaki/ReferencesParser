@@ -1,3 +1,5 @@
+from typing import Dict
+
 import click
 
 from .converters.url_converter import convert_urls_to_bibtex
@@ -10,7 +12,7 @@ PARSER_MAPPING = {
 }
 
 
-def log_errors(errors):
+def log_errors(errors: Dict[str, dict]):
     if errors is not None and len(errors.keys()) > 0:
         print("Some errors was occured during parsing:")
         for bibtex_title, error in errors.items():
@@ -68,7 +70,8 @@ def parse(path: str, save: str, parser: str, verbose: bool, beautify: int):
 
     result, errors = parser(citations)
 
-    end = "".join(["\n" for _ in range(beautify)])
+    # end = "".join(["\n" for _ in range(beautify)])
+    end = "\n" * beautify
 
     if verbose:
         for entry in result:
